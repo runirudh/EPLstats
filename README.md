@@ -24,7 +24,4 @@ Multi layer prediction for state change in a soccer match
   whose continuous counterpart should be able to tell the state of the game for each minute.
 
 
-  [ss_epl.pdf](https://github.com/runirudh/EPLstats/files/7877157/ss_epl.pdf)
-
-
-
+![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
