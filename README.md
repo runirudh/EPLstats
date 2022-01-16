@@ -29,7 +29,7 @@ Multi layer prediction for state change in a soccer match
 LIVE DATA would make for a better model utilizing more features, but here using **data from 
 2020-21 season** to be able to test predictions.
 
-[epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link] (https://fixturedownload.com/results/epl-2020)
+[epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
 
 
 
