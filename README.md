@@ -34,11 +34,17 @@ Multi layer prediction for state change in a soccer match
   This gives us the input for our 2nd layer, basically the state of the game after going 
   through the first layer. We apply more layers till we arrive at the output. 
   Probability that a team scores or does not score is to be estimated by- 
+  
   a) team's rank 
+  
   b) home/ away record
+  
   c) match location
+  
   d) goals scored, goals against
+  
   e) team wins/loss/draws 
+  
   f) **team's response to a conceded goal** // data for this needs to be added, in particular the order of goals leading to final scoreline
     <in particular time horizon is of little interest, since it does not seem logical 
      that a team scores in the first half or the second half. Whereas a hypothesis of 
