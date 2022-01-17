@@ -1,6 +1,7 @@
 # EPLstats
 Multi layer prediction for state change in a soccer match
 
+#### draft 
 
 ## Description:
 
@@ -49,11 +50,25 @@ Multi layer prediction for state change in a soccer match
 LIVE DATA would make for a better model utilizing more features, but here using **data from 
 2020-21 season** to be able to test on our predictions on full range of data.
 
-# all match scores data
+## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
 
-# final league standings data so we don't need to extract it from above dataset
+## final league standings data along w/ home & away record for all 9 features
 [soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7879089/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php?season=2020)
 
 # data for matches w/ order of score progression
+....
 
+
+## Stages:
+1. EDA : simply printing out the data, checking data types, getting a feel for it
+2. Visual EDA : finding interesting things about teams. possibly leading to better features 
+3. Defining type of regression for first layer, model selection
+4. Actual fitting of model for 1 layer, test to see who scores first goal, or if no one does 
+5. Reassess model choice, output choice
+6. Fully connected model.    
+7. testing on training data.
+8. testing on a team's data for next season which is halfway completed
+   - does our model predict man united to do bad in 2020-21 (2nd to 7th)
+   - what does Team West Ham's regression coefficient look like in our models (8th to 4th) 
+   - adding information for utilized transfer budget, how do the changes compare
