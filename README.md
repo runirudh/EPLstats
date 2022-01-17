@@ -32,6 +32,6 @@ LIVE DATA would make for a better model utilizing more features, but here using 
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
 
 
-
+[soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7878220/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php)
 
 
