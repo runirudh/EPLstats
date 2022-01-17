@@ -48,7 +48,8 @@ Multi layer prediction for state change in a soccer match
   f) **team's response to a conceded goal** // data for this needs to be added, in particular the order of goals leading to final scoreline
     <in particular time horizon is of little interest, since it does not seem logical 
      that a team scores in the first half or the second half. Whereas a hypothesis of 
-     a team scoring after having been scored on seems to have some merit to it>
+     a team scoring after having been scored on, or a team's ability to hold onto a lead (parking the bus) 
+     seems to have some merit to it>
   
   More predictor variables can be added. But it needs to be ascertained that these aren't correlated and are iid.  
   
@@ -62,7 +63,7 @@ LIVE DATA would make for a better model utilizing more features, but here using 
 ## final league standings data along w/ home & away record for all 9 features
 [soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7879089/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php?season=2020)
 
-# data for matches w/ order of score progression
+## data for matches w/ order of score progression
 ....
 
 
