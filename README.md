@@ -17,21 +17,37 @@ Multi layer prediction for state change in a soccer match
   summarize the game situation, team stats (position in table), home/away record,
   how good a team's reaction is after having conceded a goal, etc.
   
-- Once we have these transition probabilities, we can fit a model with mutliple layers
+- Once we have these transition probabilities, we can fit a big model with mutliple layers
   , where each layer is supplied with the probabilities of state change or state retained, 
   and we simply backpropogate on the most likely path on the Markov chain. 
   
 - For model architechture a discrete time horizon is applied, which has 6 layers, 
   whose continuous counterpart should be able to tell the state of the game for each minute.
 
+- Predictions are of the nature- given Team A and B are to play, at team A's home ground
+  what is the probability that team A scores first, team B scores first, no one scores.
+  This gives us the input for our 2nd layer, basically the state of the game after going 
+  through the first layer. We apply more layers till we arrive at the output. 
+  Probability that a team scores or does not score is to be estimated by- 
+  a) team's rank 
+  b) home/away record
+  c) match location
+  d) goals scored, goals against
+  e) team wins/loss/draws 
+  
+  More predictor variables can be added. But it needs to be ascertained that these aren't correlated and are iid.  
+  
+  
+  
 
 ![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
 
 LIVE DATA would make for a better model utilizing more features, but here using **data from 
-2020-21 season** to be able to test predictions.
+2020-21 season** to be able to test on our predictions on full range of data.
 
+# all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
 
-
+# final league standings data so we don't need to extract it from above dataset
 [soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7879089/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php?season=2020)
 
