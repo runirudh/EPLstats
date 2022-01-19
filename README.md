@@ -51,6 +51,8 @@ Multi layer prediction for state change in a soccer match
      a team scoring after having been scored on, or a team's ability to hold onto a lead (parking the bus) 
      seems to have some merit to it>
   
+  g) Transfer budget   
+  
   More predictor variables can be added. But it needs to be ascertained that these aren't correlated and are iid.  
   
 
