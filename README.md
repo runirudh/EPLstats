@@ -19,7 +19,7 @@ Multi layer prediction for state change in a soccer match
   
 - Once we have these transition probabilities, we can fit a big model with mutliple layers
   , where each layer is supplied with the probabilities of state change or state retained, 
-  and we simply backpropogate on the most likely path on the Markov chain. 
+  and we simply backpropogate on the most likely path. 
   
 - For model architechture a discrete time horizon is applied, which has 6 layers, 
   whose continuous counterpart should be able to tell the state of the game for each minute.
@@ -45,10 +45,11 @@ Multi layer prediction for state change in a soccer match
   e) team wins/loss/draws 
   
   f) **team's response to a conceded goal** // data for this needs to be added, in particular the order of goals leading to final scoreline
-    <in particular time horizon is of little interest, since it does not seem logical 
+    <in particular time horizon is of little interest, since it does not seem good for a model learning process
      that a team scores in the first half or the second half. Whereas a hypothesis of 
-     a team scoring after having been scored on, or a team's ability to hold onto a lead (parking the bus) 
-     seems to have some merit to it>
+     a team scoring after having been scored on, or a team's ability to hold onto a lead
+     seems to have some merit to it> 
+     If we have this information we can add rewards to our chain and build a markov decision process problem, & traverse the chain so as to max./min reward.
   
   g) Transfer budget   
   
