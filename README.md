@@ -1,7 +1,7 @@
 # EPLstats
 Multi layer prediction for state change in a soccer match
 
-#### draft 
+## draft 
 
 ## Description:
 
@@ -70,14 +70,19 @@ LIVE DATA would make for a better model utilizing more features, but here using 
 
 
 ## Stages:
-1. EDA : simply printing out the data, checking data types, getting a feel for it
-2. Visual EDA : finding interesting things about teams. possibly leading to better features 
-3. Defining type of regression for first layer, model selection
-4. Actual fitting of model for 1 layer, test to see who scores first goal, or if no one does 
-5. Reassess model choice, output choice
-6. Fully connected model.    
-7. testing on training data.
-8. testing on a team's data for next season which is halfway completed
-   - does our model predict man united to do bad in 2020-21 (2nd to 7th)
-   - what does Team West Ham's regression coefficient look like in our models (8th to 4th) 
-   - adding information for utilized transfer budget, how do the changes compare
+1. EDA : simply printing out the data, checking data types, summary stats.
+2. Visual EDA : describe the season stories. learn about the features, and correlations between match pairings & result.
+3. Defining type of regression for first layer, model selection-
+5. Actual fitting of model for 1 layer, test to see who scores first goal, or if no one does 
+6. Reassess model choice, output choice
+7. applying same model output flow onto multiple layers,build Fully connected network.    
+8. test individual layers manually, feeding output of prev layer as input 
+9. test on training data to predict multiple values of goal progression for home & away.
+10. assess model capabilities. assign test metrics. 
+11. test more on new season data which is halfway completed. train again, predict on remaining games.
+    - adding information for utilized transfer budget, how do the changes compare to new standings. Learning
+    - is transfer budget a positive addition to teams.
+    - add manager change categorical variable.
+    - what are factors (based on model) that predict a team's rise/downfall 
+    - story: man u (2nd->7th) ; west ham (8th ->4th) ..how does the coefficient for manager_change,transfer_budget look like
+             w.r.t to goal scoring, conceding
