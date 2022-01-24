@@ -70,19 +70,17 @@ Using **data from 2020-21 season** to be able to test our predictions on full ra
 
 
 ## Stages:
-1. EDA : simply printing out the data, checking data types, summary stats.
-2. Visual EDA : describe the season stories. learn about the features, and correlations between match pairings & result.
+1. EDA : printing out the data, checking data types, summary stats.
+2. Visual EDA : describe the season stories. Learn about the features, and correlations between match pairings & result.
 3. Defining type of regression for first layer, model selection-
-5. Actual fitting of model for 1 layer, test to see who scores first goal, or if no one does 
-6. Reassess model choice, output choice
-7. applying same model output flow onto multiple layers,build Fully connected network.    
-8. test individual layers manually, feeding output of prev layer as input 
-9. test on training data to predict multiple values of goal progression for home & away.
-10. assess model capabilities. assign test metrics. 
-11. test more on new season data which is halfway completed. train again, predict on remaining games.
-    - adding information for utilized transfer budget, how do the changes compare to new standings. Learning
+4. Fit model for first layer, test to see who scores first goal, or if no one does 
+5. Reassess model choice, output type
+6. applying same model output flow onto multiple layers, build connected network.    
+7. test individual layers manually, feeding output of prev layer as input 
+8. test on training data to predict multiple values of goal progression for home & away.
+9. assess model capabilities. assign test metrics. 
+10. test more on new season data which is halfway completed. train again, predict on remaining games.
+    - adding information for utilized transfer budget, how do the changes compare to new standings.
     - is transfer budget a positive addition to teams.
     - add manager change categorical variable.
-    - what are factors (based on model) that predict a team's rise/downfall 
-    - story: man u (2nd->7th) ; west ham (8th ->4th) ..how does the coefficient for manager_change,transfer_budget look like
-             w.r.t to goal scoring, conceding
+    - what are factors (based on model coefs) that predict a team's rise/downfall 
