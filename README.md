@@ -45,16 +45,15 @@ Multi layer prediction for state change in a soccer match
   e) team wins/loss/draws 
   
   f) **team's response to a conceded goal** // data for this needs to be added, in particular the order of goals leading to final scoreline
-    <in particular time horizon is of little interest, since it does not seem good for a model learning process
-     that a team scores in the first half or the second half. Whereas a hypothesis of 
+    <in particular time horizon is of little interest, since it does not seem likely
+     that a team scores in the first half or the second half (atleast for learning). Whereas a hypothesis of 
      a team scoring after having been scored on, or a team's ability to hold onto a lead
      seems to have some merit to it> 
-     If we have this information we can add rewards to our chain and build a markov decision process problem, & traverse the chain so as to max./min reward.
+     
+     If we have this information we can add rewards to our chain and build a markov decision process problem, 
+     & traverse the chain so as to max./min reward.
   
   g) Transfer budget   
-  
-  More predictor variables can be added. But it needs to be ascertained that these aren't correlated and are iid.  
-  
 
 Using **data from 2020-21 season** to be able to test our predictions on full range of data.
 
@@ -65,7 +64,7 @@ Using **data from 2020-21 season** to be able to test our predictions on full ra
 [soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7879089/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php?season=2020)
 
 ## data for matches w/ order of score progression
-// if this data is found with time of goal attribute, we can try a poisson model to see how long before a goal is scored.  
+// if this data is found with time of goal attribute, we can try a simple poisson model to see how long before a goal is scored.  
 ....
 
 
