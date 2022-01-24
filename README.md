@@ -56,8 +56,7 @@ Multi layer prediction for state change in a soccer match
   More predictor variables can be added. But it needs to be ascertained that these aren't correlated and are iid.  
   
 
-LIVE DATA would make for a better model utilizing more features, but here using **data from 
-2020-21 season** to be able to test on our predictions on full range of data.
+Using **data from 2020-21 season** to be able to test our predictions on full range of data.
 
 ## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
@@ -66,6 +65,7 @@ LIVE DATA would make for a better model utilizing more features, but here using 
 [soccer-standings.xlsx](https://github.com/runirudh/EPLstats/files/7879089/soccer-standings.xlsx) from [link](https://www.rotowire.com/soccer/league-table.php?season=2020)
 
 ## data for matches w/ order of score progression
+// if this data is found with time of goal attribute, we can try a poisson model to see how long before a goal is scored.  
 ....
 
 
