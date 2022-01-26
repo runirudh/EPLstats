@@ -71,7 +71,7 @@ Using **data from 2020-21 season** to be able to test our predictions on full ra
 ## Stages:
 1. EDA : printing out the data, checking data types, summary stats.
 2. Visual EDA : describe the season stories. Learn about the features, and correlations between match pairings & result.
-3. Defining type of regression for first layer, model selection-
+3. Based on correaltions (ggpairs), define response in terms of features- select type of regression for first layer, model selection
 4. Fit model for first layer, test to see who scores first goal, or if no one does 
 5. Reassess model choice, output type
 6. applying same model output flow onto multiple layers, build connected network.    
