@@ -14,8 +14,9 @@ Multi layer prediction for state change in a soccer match
 
 **Getting these transition probability of changing states is where most of the work 
   needs to be put in.** These probabilities need to be estimated from features that 
-  summarize the game situation, team stats (position in table), home/away record,
-  how good a team's reaction is after having conceded a goal, etc.
+  summarize the game situation, team stats (position in table), home/away record, A v/s B past record,
+  how good a team's reaction is after having conceded a goal, etc. . These features would get multiplied by 
+  our parameters which themselves are retrieved by training on the result of the game in question & all other games.
   
 - Once we have these transition probabilities, we can fit a big model with mutliple layers
   , where each layer is supplied with the probabilities of state change or state retained, 
