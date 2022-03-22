@@ -18,9 +18,12 @@ Multi layer prediction for state change in a soccer match
   how good a team's reaction is after having conceded a goal, etc. 
   The idea is to calculate parameters which after multiplying with feature matrix give out the intended result of the game.
   
-  A simpler implemenatation one can do (which commentators casually invoke) is to assume 
+A simpler implemenatation one can do (which commentators casually invoke) is to assume-
+
                   y = result 
+                  
                   X = home and away team , ground  
+                  
                   y is calculated based on past games between A & B at ground x.  
   
 - Once we have these transition probabilities, we can fit a big model with mutliple layers
