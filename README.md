@@ -59,8 +59,15 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
      & traverse the chain so as to max./min reward.
   
   g) Transfer budget   
+  
 
-Using **data from 2020-21 season** to be able to test our predictions on full range of data.
+## initial models results 
+
+![Screen Shot 2022-04-01 at 9 04 30 PM](https://user-images.githubusercontent.com/96305841/161358242-9bf98d16-c4a5-4b6d-bebf-866c21ceceff.png)] 
+
+from [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
+
+
 
 ## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
