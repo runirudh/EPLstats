@@ -61,7 +61,7 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
   g) Transfer budget   
   
 
-## initial models results from [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
+## initial results from modeling [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
 
 ### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
     - interpreting each goal as a category
@@ -69,7 +69,7 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
 ![Screen Shot 2022-04-01 at 9 04 30 PM](https://user-images.githubusercontent.com/96305841/161358242-9bf98d16-c4a5-4b6d-bebf-866c21ceceff.png)
 
 ### Decision tree fit for One Hot encoded multi-o/p multi-class: 'Home goals' , 'Away Goals'
-    - predicting for each match row, a sparse matrix of one hot encoded values for home, away scores (mutually exc. & exh.)
+    - predicting for each match row, a sparse vector of one hot encoded values for home, away scores (mutually exc. & exh.)
 
 ![Screen Shot 2022-04-01 at 9 12 09 PM](https://user-images.githubusercontent.com/96305841/161359538-fb7a6234-73b6-4822-9204-d533632253f6.png)
 
@@ -82,6 +82,7 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 ![Screen Shot 2022-04-01 at 9 19 36 PM](https://user-images.githubusercontent.com/96305841/161359888-ee970bb1-915f-4e82-9d0c-80422a7ad53b.png)
 
+![Screen Shot 2022-04-01 at 9 22 10 PM](https://user-images.githubusercontent.com/96305841/161360000-e11a058e-a7d0-4503-88c5-59d61de1628e.png)
 
 ## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
