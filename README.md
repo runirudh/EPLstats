@@ -63,7 +63,10 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
 
 ## initial models results 
 
-![Screen Shot 2022-04-01 at 9 04 30 PM](https://user-images.githubusercontent.com/96305841/161358242-9bf98d16-c4a5-4b6d-bebf-866c21ceceff.png)] 
+![Screen Shot 2022-04-01 at 9 04 30 PM](https://user-images.githubusercontent.com/96305841/161358242-9bf98d16-c4a5-4b6d-bebf-866c21ceceff.png)
+
+![Screen Shot 2022-04-01 at 9 10 24 PM (2)](https://user-images.githubusercontent.com/96305841/161358787-5c56e49d-af62-4cdc-8c4a-28be68016d02.png)
+
 
 from [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
 
