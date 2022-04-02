@@ -61,15 +61,26 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
   g) Transfer budget   
   
 
-## initial models results 
+## initial models results from [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
 
+### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
+    - interpreting each goal as a category
+    - pruning tree to find least impurities path
 ![Screen Shot 2022-04-01 at 9 04 30 PM](https://user-images.githubusercontent.com/96305841/161358242-9bf98d16-c4a5-4b6d-bebf-866c21ceceff.png)
 
-![Screen Shot 2022-04-01 at 9 10 24 PM (2)](https://user-images.githubusercontent.com/96305841/161358787-5c56e49d-af62-4cdc-8c4a-28be68016d02.png)
+### Decision tree fit for One Hot encoded multi-o/p multi-class: 'Home goals' , 'Away Goals'
+    - predicting for each match row, a sparse matrix of one hot encoded values for home, away scores (mutually exc. & exh.)
+
+![Screen Shot 2022-04-01 at 9 12 09 PM](https://user-images.githubusercontent.com/96305841/161359538-fb7a6234-73b6-4822-9204-d533632253f6.png)
 
 
-from [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
+## data 
+https://github.com/tara-nguyen/english-premier-league-datasets-for-10-seasons
 
+Description: EPL data of 10 seasons, with half time & full time score information for each game w/ dates.
+
+
+![Screen Shot 2022-04-01 at 9 19 36 PM](https://user-images.githubusercontent.com/96305841/161359888-ee970bb1-915f-4e82-9d0c-80422a7ad53b.png)
 
 
 ## all match scores data
