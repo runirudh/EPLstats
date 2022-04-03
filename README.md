@@ -28,27 +28,22 @@ Multi layer prediction for state change in a soccer match
         
         to predict these classes(homegoal1, awaygoal1, no change).
         
-       ![IMG_4D5D68F338AB-1](https://user-images.githubusercontent.com/96305841/161445203-d0eec127-caf4-442f-b200-c17894b603b3.jpeg)
+![IMG_4D5D68F338AB-1](https://user-images.githubusercontent.com/96305841/161445203-d0eec127-caf4-442f-b200-c17894b603b3.jpeg)
+     
 
       
-**Getting transition probability of changing states is tough**
+**Getting transition probabilities**
   These probabilities are to be estimated from features that 
-  summarize the game situation, team stats (position in table), home/away record, A v/s B past record etc.
-  **which depend on the quality of data we have**
+  summarize the game situation, team stats (position in table), home/away record, A v/s B past record etc. .
+  It may be suitable to do some initial blackbox modeling first before a network is made.
   
-- Once we have these transition probabilities, we can fit a big model with mutliple layers
-  , where each layer is supplied with the probabilities of state change or state retained, 
-  and we simply backpropogate on the most likely path. 
-![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
+- transition probabilities are simply state change(+-) or state retained. 
+  
 ![IMG_0197](https://user-images.githubusercontent.com/96305841/161445262-271386af-890b-4af4-9665-385c34913e37.jpg)
+![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
 
 
-
-- Predictions are of the nature- 
-  given Team A and B are to play, at team A's home ground
-  what is the probability that team A scores first, team B scores first, no one scores.
-  This gives us the input for our 2nd layer, basically the state of the game after going 
-  through the first layer, which we can encode by updating some fo the features.
+- After making prediction on events of A,B scores we update some features of the game & refit the model for the 2nd half.
  
 ## initial results from modeling final score of game [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb] 
 
