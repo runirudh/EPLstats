@@ -27,7 +27,9 @@ Multi layer prediction for state change in a soccer match
         We can apply both descriminative (partitioning algos Kneighbors, CART, Decision Trees) & generative models (NB, logistic regression)
         
         to predict these classes(homegoal1, awaygoal1, no change).
-       
+        
+       ![IMG_4D5D68F338AB-1](https://user-images.githubusercontent.com/96305841/161445203-d0eec127-caf4-442f-b200-c17894b603b3.jpeg)
+
       
 **Getting transition probability of changing states is tough**
   These probabilities are to be estimated from features that 
@@ -37,8 +39,10 @@ Multi layer prediction for state change in a soccer match
 - Once we have these transition probabilities, we can fit a big model with mutliple layers
   , where each layer is supplied with the probabilities of state change or state retained, 
   and we simply backpropogate on the most likely path. 
+![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
+![IMG_0197](https://user-images.githubusercontent.com/96305841/161445262-271386af-890b-4af4-9665-385c34913e37.jpg)
 
-![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
+
 
 - Predictions are of the nature- 
   given Team A and B are to play, at team A's home ground
