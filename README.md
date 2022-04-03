@@ -38,11 +38,6 @@ Multi layer prediction for state change in a soccer match
   It may be suitable to do some initial blackbox modeling first before a network is made.
   
 - transition probabilities are simply state change(+-) or state retained. 
-  
-![IMG_0197](https://user-images.githubusercontent.com/96305841/161445667-6281cd62-1a67-4504-b79c-994f7535968a.jpg)
-
-![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
-
 
 - After making prediction on events of A,B scores we update some features of the game & refit the model for the 2nd half.
  
@@ -85,4 +80,7 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 
 
+  
+![IMG_0197](https://user-images.githubusercontent.com/96305841/161445667-6281cd62-1a67-4504-b79c-994f7535968a.jpg)
 
+![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
