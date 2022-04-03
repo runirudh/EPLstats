@@ -46,7 +46,8 @@ Multi layer prediction for state change in a soccer match
 
 - After making prediction on events of A,B scores we update some features of the game & refit the model for the 2nd half.
  
-## initial results from modeling final score of game [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb] 
+## initial results on modeling final score of game (w/out halftime score data) based on 
+  [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb] 
 
 ### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
     - interpreting each goal as a category
@@ -58,6 +59,13 @@ Multi layer prediction for state change in a soccer match
 
 ![Screen Shot 2022-04-01 at 9 12 09 PM](https://user-images.githubusercontent.com/96305841/161359538-fb7a6234-73b6-4822-9204-d533632253f6.png)
 
+
+ -  half time score data can also be predicted from these models. 
+
+ -  fit halftime model. create pipeline for providing X feature parameters through ipywidgets for prediction of game,
+    apply trained model and output results of halftime.
+    
+ -  add halftime score data to X. Make new prediction for fulltime score (compare to model w/o halftime score). output results  
 
 ## data 
 https://github.com/tara-nguyen/english-premier-league-datasets-for-10-seasons
