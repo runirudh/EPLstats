@@ -18,14 +18,6 @@ Multi layer prediction for state change in a soccer match
   how good a team's reaction is after having conceded a goal, etc. 
   The idea is to calculate parameters which after multiplying with feature matrix give out the intended result of the game.
   
-A simpler implemenatation one can do (which commentators casually invoke) is to assume-
-
-                  y = result 
-                  
-                  X = home and away team , ground  
-                  
-                  y is calculated based on past games between A & B at ground x.  
-  
 - Once we have these transition probabilities, we can fit a big model with mutliple layers
   , where each layer is supplied with the probabilities of state change or state retained, 
   and we simply backpropogate on the most likely path. 
@@ -38,14 +30,8 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
   what is the probability that team A scores first, team B scores first, no one scores.
   This gives us the input for our 2nd layer, basically the state of the game after going 
   through the first layer. We apply more layers till we reach end of the game. 
-  Useful features for estimating goal scoring probability can be - 
-  a) team's rank 
-  b) home/ away record
-  c) match location
-  d) goals scored, goals against
-  e) team wins/loss/draws 
-  g) Transfer budget   
-  
+  ![IMG_0189](https://user-images.githubusercontent.com/96305841/161407407-33ac2369-e872-438e-92a9-805284353f99.jpeg)
+ 
 ## initial results from modeling [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
 
 ### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
