@@ -30,9 +30,6 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
   , where each layer is supplied with the probabilities of state change or state retained, 
   and we simply backpropogate on the most likely path. 
   
-- For model architechture a discrete time horizon is applied, which has 6 layers, 
-  whose continuous counterpart should be able to tell the state of the game for each minute.
-
 
 ![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
 
@@ -42,25 +39,13 @@ A simpler implemenatation one can do (which commentators casually invoke) is to 
   This gives us the input for our 2nd layer, basically the state of the game after going 
   through the first layer. We apply more layers till we reach end of the game. 
   Useful features for estimating goal scoring probability can be - 
-  
   a) team's rank 
-  
   b) home/ away record
-  
   c) match location
-  
   d) goals scored, goals against
-  
   e) team wins/loss/draws 
- 
-  f) team's response to a conceded goal** 
-     
-     If we have this information we can add rewards to our chain and build a markov decision process problem, 
-     & traverse the chain so as to max./min reward.
-  
   g) Transfer budget   
   
-
 ## initial results from modeling [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb]
 
 ### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
