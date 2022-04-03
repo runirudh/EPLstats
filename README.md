@@ -24,8 +24,7 @@ Multi layer prediction for state change in a soccer match
   
 
 ![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
-![IMG_0189](https://user-images.githubusercontent.com/96305841/161407453-5568f30e-b074-4cc4-a7e0-97199dbdfbc3.jpg)
-
+[IMG_0189.heic.pdf](https://github.com/runirudh/EPLstats/files/8403633/IMG_0189.heic.pdf)
 - Predictions are of the nature- 
   given Team A and B are to play, at team A's home ground
   what is the probability that team A scores first, team B scores first, no one scores.
