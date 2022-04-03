@@ -39,7 +39,8 @@ Multi layer prediction for state change in a soccer match
   
 - transition probabilities are simply state change(+-) or state retained. 
   
-![IMG_0197](https://user-images.githubusercontent.com/96305841/161445262-271386af-890b-4af4-9665-385c34913e37.jpg)
+![IMG_0197](https://user-images.githubusercontent.com/96305841/161445667-6281cd62-1a67-4504-b79c-994f7535968a.jpg)
+
 ![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
 
 
