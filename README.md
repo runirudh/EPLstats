@@ -27,26 +27,22 @@ Multi layer prediction for state change in a soccer match
         We can apply both descriminative (partitioning algos Kneighbors, CART, Decision Trees) & generative models (NB, logistic regression)
         
         to predict these classes(homegoal1, awaygoal1, no change).
-       
+        
+![IMG_4D5D68F338AB-1](https://user-images.githubusercontent.com/96305841/161445203-d0eec127-caf4-442f-b200-c17894b603b3.jpeg)
+     
+
       
-**Getting transition probability of changing states is tough**
+**Getting transition probabilities**
   These probabilities are to be estimated from features that 
-  summarize the game situation, team stats (position in table), home/away record, A v/s B past record etc.
-  **which depend on the quality of data we have**
+  summarize the game situation, team stats (position in table), home/away record, A v/s B past record etc. .
+  It may be suitable to do some initial blackbox modeling first before a network is made.
   
-- Once we have these transition probabilities, we can fit a big model with mutliple layers
-  , where each layer is supplied with the probabilities of state change or state retained, 
-  and we simply backpropogate on the most likely path. 
+- transition probabilities are simply state change(+-) or state retained. 
 
-![IMG_0471](https://user-images.githubusercontent.com/96305841/149665581-909c3511-2a01-42ce-b404-3148d16a41e0.jpg)
-
-- Predictions are of the nature- 
-  given Team A and B are to play, at team A's home ground
-  what is the probability that team A scores first, team B scores first, no one scores.
-  This gives us the input for our 2nd layer, basically the state of the game after going 
-  through the first layer, which we can encode by updating some fo the features.
+- After making prediction on events of A,B scores we update some features of the game & refit the model for the 2nd half.
  
-## initial results from modeling final score of game [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb] 
+## initial results on modeling final score of game (w/out halftime score data) based on 
+  [https://github.com/runirudh/EPLstats/blob/main/epl1.ipynb] 
 
 ### Decision tree fit for multi-o/p multi-class: 'Home goals' , 'Away Goals' 
     - interpreting each goal as a category
@@ -59,6 +55,13 @@ Multi layer prediction for state change in a soccer match
 ![Screen Shot 2022-04-01 at 9 12 09 PM](https://user-images.githubusercontent.com/96305841/161359538-fb7a6234-73b6-4822-9204-d533632253f6.png)
 
 
+ -  half time score data can also be predicted from these models. 
+
+ -  fit halftime model. create pipeline for providing X feature parameters through ipywidgets for prediction of game,
+    apply trained model and output results of halftime.
+    
+ -  add halftime score data to X. Make new prediction for fulltime score (compare to model w/o halftime score). output results  
+
 ## data 
 https://github.com/tara-nguyen/english-premier-league-datasets-for-10-seasons
 
@@ -66,8 +69,6 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 
 ![Screen Shot 2022-04-01 at 9 19 36 PM](https://user-images.githubusercontent.com/96305841/161359888-ee970bb1-915f-4e82-9d0c-80422a7ad53b.png)
-
-![Screen Shot 2022-04-01 at 9 22 10 PM](https://user-images.githubusercontent.com/96305841/161360000-e11a058e-a7d0-4503-88c5-59d61de1628e.png)
 
 ## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
@@ -77,4 +78,7 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 
 
+  
+![IMG_0197](https://user-images.githubusercontent.com/96305841/161445667-6281cd62-1a67-4504-b79c-994f7535968a.jpg)
 
+![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
