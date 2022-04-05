@@ -60,7 +60,14 @@ Multi layer prediction for state change in a soccer match
  -  fit halftime model. create pipeline for providing X feature parameters through ipywidgets for prediction of game,
     apply trained model and output results of halftime.
     
- -  add halftime score data to X. Make new prediction for fulltime score (compare to model w/o halftime score). output results  
+ -  add halftime score data to X. Make new prediction for fulltime score (compare to model w/o halftime score). merge and compare outputs 
+    of half & full time predictions. 
+
+ -  how does one benefit from interpreting model as a Markov chain. 
+ 
+ -  What are optimization applications of average costs & how they apply here.
+    -  what do limiting probabilities look like. how are they calculated (based on what data)
+    -  what are the functions of Present value here. 
 
 ## data 
 https://github.com/tara-nguyen/english-premier-league-datasets-for-10-seasons
@@ -69,6 +76,11 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 
 ![Screen Shot 2022-04-01 at 9 19 36 PM](https://user-images.githubusercontent.com/96305841/161359888-ee970bb1-915f-4e82-9d0c-80422a7ad53b.png)
+
+where pi is the set of limiting probabilities that are stationary & do not change.
+![IMG_19F6CAACF723-1](https://user-images.githubusercontent.com/96305841/161799583-9dd69c60-f442-444e-b7f7-05f6f3b8debf.jpeg)
+
+
 
 ## all match scores data
 [epl-2020-GMTStandardTime.xlsx](https://github.com/runirudh/EPLstats/files/7877241/epl-2020-GMTStandardTime.xlsx) from [link](https://fixturedownload.com/results/epl-2020)
@@ -79,6 +91,6 @@ Description: EPL data of 10 seasons, with half time & full time score informatio
 
 
   
-![IMG_0197](https://user-images.githubusercontent.com/96305841/161445667-6281cd62-1a67-4504-b79c-994f7535968a.jpg)
 
-![IMG_0196](https://user-images.githubusercontent.com/96305841/161445259-94458818-7802-4cb7-9656-d443d8ec7e5f.jpg)
+
+
