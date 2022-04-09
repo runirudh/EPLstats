@@ -19,9 +19,9 @@ Multi layer prediction for state change in a soccer match
         
         X_j+1 = (f(p), f(q))
         
-        where f is our predicted function of describing probability of going from state 
+        where f is our predicted function describing probability of going from state X_j at time t to state X_j+1 at time t+1.
         
-        eg. 3 - 0 given n features {X_1, X_2, X_3...X_n) into only 3 possible states 3-1,3-0,4-0 
+        eg. if score is 3 - 0 given n features {X_1, X_2, X_3...X_n), possible states are only the set 3-1,3-0,4-0 
         
         We can apply both descriminative (partitioning algos Kneighbors, CART, Decision Trees) & generative models (NB, logistic regression)
         
