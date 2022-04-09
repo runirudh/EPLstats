@@ -56,7 +56,7 @@ Multi layer prediction for state change in a soccer match
 
  -  half time score data can also be predicted from these models. 
 
- -  fit halftime model. create pipeline for providing X feature parameters through ipywidgets for prediction of game,
+ -  fit halftime model. create function to input X parameters through ipywidgets for prediction of game score,
     apply trained model and output results of halftime.
     
  -  add halftime score data to X. Make new prediction for fulltime score (compare to model w/o halftime score). merge and compare outputs 
