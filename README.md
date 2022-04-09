@@ -9,8 +9,7 @@ Multi layer prediction for state change in a soccer match
 - Assume Team names to be A & B.
 
 - Starting state for this random phenomenon is (0,0) , from where it can go to state 
-  (0,1) or state (1,0) or stay in (0,0) depending on the maximum transition probability 
-  (Bayes Decision Rule) out of the 3. 
+  (0,1) or state (1,0) or stay in (0,0).
   
   ![IMG_0189](https://user-images.githubusercontent.com/96305841/161407555-29eb74ca-e9ec-431b-9868-b0aa54f0c371.jpg)
 
